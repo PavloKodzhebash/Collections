@@ -4,155 +4,237 @@
     <meta charset="UTF-8">
     <title>Museum Collections</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Simple Museum-style CSS */
+        body {
+            font-family: "Georgia", serif;
+            background-color: #f4f1ee;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5b4636;
+            color: #f4f1ee;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 15px;
+        }
+        nav button {
+            background-color: #8b6d5c;
+            color: #f4f1ee;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #a07f6c;
+        }
+        .collection-section {
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #8b6d5c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #5b4636;
+        }
+        .artifact {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            background-color: #fff8f0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .artifact img {
+            max-width: 300px;
+            margin-right: 20px;
+            border: 2px solid #8b6d5c;
+            border-radius: 5px;
+        }
+        .artifact-data {
+            flex: 1;
+        }
+        .artifact-data h3 {
+            margin-top: 0;
+            color: #8b6d5c;
+        }
+        .artifact-data p {
+            margin: 4px 0;
+        }
+        footer {
+            background-color: #5b4636;
+            color: #f4f1ee;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Museum Collections</h1>
-        <p>The content in this gallery was entirely created by AI under human direction. It was then curated, reviewed and edited by a human before being published.</p>
-    </header>
 
-    <nav>
-        <button onclick="showSection('archeology')">Archeology</button>
-        <button onclick="showSection('anthropology')">Anthropology</button>
-    </nav>
+<header>
+    <h1>Museum Collections</h1>
+    <p>The content in this gallery was entirely created by AI under human direction, curated and reviewed before being published.</p>
+</header>
 
-    <!-- ARCHÆOLOGY SECTION -->
-    <section id="archeology" class="collection-section">
-        <h2>Archeology</h2>
+<nav>
+    <button onclick="showSection('archeology')">Archeology</button>
+    <button onclick="showSection('anthropology')">Anthropology</button>
+</nav>
 
-        <div class="artifact">
-            <img src="Archeology/The serent daggre.png" alt="Serpent Dagger">
-            <div class="artifact-data">
-                <h3>Serpent Dagger</h3>
-                <p><strong>Material:</strong> Obsidian with emerald inlays</p>
-                <p><strong>Size/Weight/Shape:</strong> 25cm blade, curved handle</p>
-                <p><strong>Estimated Age:</strong> ~3000 years</p>
-                <p><strong>Preservation State:</strong> Pristine</p>
-                <p><strong>Location Found:</strong> Ancient tomb, Mesopotamia</p>
-                <p><strong>Use and Function:</strong> Ceremonial dagger</p>
-                <p><strong>Evidence of Use:</strong> Minor polishing on blade</p>
-                <p><strong>Manufacture Clues:</strong> Fine flaking marks, intricate handle carving</p>
-                <p><strong>Cultural Context:</strong> Ritual artifact of unknown cult</p>
-                <p><strong>Found With:</strong> Small ceremonial pottery</p>
-                <p><strong>Burial or Habitat Context:</strong> Burial chamber</p>
-                <p><strong>Symbolism:</strong> Cobra represents protection and power</p>
-                <p><strong>Comparison:</strong> Similar to other obsidian daggers in region</p>
-            </div>
+<!-- Archeology Section -->
+<section id="archeology" class="collection-section">
+    <h2>Archeology (Artifacts of the Past)</h2>
+
+    <div class="artifact">
+        <img src="Archeology/The serent daggre.png" alt="The Serpent Dagger">
+        <div class="artifact-data">
+            <h3>The Serpent Dagger</h3>
+            <p><strong>Material:</strong> Obsidian with emerald inlay</p>
+            <p><strong>Size/Weight/Shape:</strong> 25cm blade, curved, lightweight</p>
+            <p><strong>Estimated Age:</strong> 1500 BCE</p>
+            <p><strong>Preservation State:</strong> Complete</p>
+            <p><strong>Location Found:</strong> Burial site, coordinates unknown</p>
+            <p><strong>Use and Function:</strong> Ritual dagger</p>
+            <p><strong>Evidence of Use:</strong> Slight wear on hilt</p>
+            <p><strong>Manufacture Clues:</strong> Fine flaking, polished handle</p>
+            <p><strong>Cultural Context:</strong> Unknown cult</p>
+            <p><strong>Found With:</strong> None</p>
+            <p><strong>Burial or Habitat Context:</strong> Tomb</p>
+            <p><strong>Symbolism:</strong> Serpent imagery represents protection</p>
+            <p><strong>Comparison:</strong> Similar to obsidian daggers in nearby region</p>
         </div>
+    </div>
 
-        <div class="artifact">
-            <img src="Archeology/knife.png" alt="Lost Seas Astrolabe">
-            <div class="artifact-data">
-                <h3>Lost Seas Astrolabe</h3>
-                <p><strong>Material:</strong> Bronze</p>
-                <p><strong>Size/Weight/Shape:</strong> 15cm diameter disc</p>
-                <p><strong>Estimated Age:</strong> ~2500 years</p>
-                <p><strong>Preservation State:</strong> Good</p>
-                <p><strong>Location Found:</strong> Sunken ship, Mediterranean</p>
-                <p><strong>Use and Function:</strong> Navigation tool</p>
-                <p><strong>Evidence of Use:</strong> Worn markings on disc</p>
-                <p><strong>Manufacture Clues:</strong> Engraved constellation patterns</p>
-                <p><strong>Cultural Context:</strong> Ancient maritime culture</p>
-                <p><strong>Found With:</strong> Fragments of ship timber</p>
-                <p><strong>Burial or Habitat Context:</strong> Shipwreck</p>
-                <p><strong>Symbolism:</strong> Represents lost navigation knowledge</p>
-                <p><strong>Comparison:</strong> Similar to other astrolabes found in the region</p>
-            </div>
+    <div class="artifact">
+        <img src="Archeology/knife.png" alt="Lost Seas Astrolabe">
+        <div class="artifact-data">
+            <h3>Lost Seas Astrolabe</h3>
+            <p><strong>Material:</strong> Bronze</p>
+            <p><strong>Size/Weight/Shape:</strong> Circular, 15cm diameter</p>
+            <p><strong>Estimated Age:</strong> 1200 BCE</p>
+            <p><strong>Preservation State:</strong> Complete</p>
+            <p><strong>Location Found:</strong> Coastal excavation</p>
+            <p><strong>Use and Function:</strong> Navigation instrument</p>
+            <p><strong>Evidence of Use:</strong> Engraved star patterns</p>
+            <p><strong>Manufacture Clues:</strong> Precision engraving</p>
+            <p><strong>Cultural Context:</strong> Ancient mariners</p>
+            <p><strong>Found With:</strong> Small tools</p>
+            <p><strong>Burial or Habitat Context:</strong> Midden</p>
+            <p><strong>Symbolism:</strong> Navigation and guidance</p>
+            <p><strong>Comparison:</strong> Matches similar Bronze Age astrolabes</p>
         </div>
+    </div>
 
-        <div class="artifact">
-            <img src="Archeology/vase.png" alt="Peace Urn">
-            <div class="artifact-data">
-                <h3>Peace Urn</h3>
-                <p><strong>Material:</strong> Terracotta</p>
-                <p><strong>Size/Weight/Shape:</strong> 30cm tall, rounded body</p>
-                <p><strong>Estimated Age:</strong> ~2800 years</p>
-                <p><strong>Preservation State:</strong> Partial crack on side</p>
-                <p><strong>Location Found:</strong> Burial site, Ancient city</p>
-                <p><strong>Use and Function:</strong> Ceremonial vessel</p>
-                <p><strong>Evidence of Use:</strong> Faded painting</p>
-                <p><strong>Manufacture Clues:</strong> Hand-painted motifs</p>
-                <p><strong>Cultural Context:</strong> Symbolic artifact of peace</p>
-                <p><strong>Found With:</strong> Other pottery fragments</p>
-                <p><strong>Burial or Habitat Context:</strong> Tomb</p>
-                <p><strong>Symbolism:</strong> Depicts meeting of two leaders</p>
-                <p><strong>Comparison:</strong> Similar to other ceremonial urns</p>
-            </div>
+    <div class="artifact">
+        <img src="Archeology/vase.png" alt="Urn of Peace">
+        <div class="artifact-data">
+            <h3>Urn of Peace</h3>
+            <p><strong>Material:</strong> Terracotta</p>
+            <p><strong>Size/Weight/Shape:</strong> 30cm height, rounded</p>
+            <p><strong>Estimated Age:</strong> 1000 BCE</p>
+            <p><strong>Preservation State:</strong> Slightly cracked</p>
+            <p><strong>Location Found:</strong> Archaeological site</p>
+            <p><strong>Use and Function:</strong> Ceremonial vessel</p>
+            <p><strong>Evidence of Use:</strong> Crack indicates ancient handling</p>
+            <p><strong>Manufacture Clues:</strong> Painted decorations</p>
+            <p><strong>Cultural Context:</strong> Peace ritual</p>
+            <p><strong>Found With:</strong> Other ceremonial objects</p>
+            <p><strong>Burial or Habitat Context:</strong> Tomb</p>
+            <p><strong>Symbolism:</strong> Unity and peace</p>
+            <p><strong>Comparison:</strong> Similar to other Terracotta vessels</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ANTHROPOLOGY SECTION -->
-    <section id="anthropology" class="collection-section" style="display:none;">
-        <h2>Anthropology</h2>
+<!-- Anthropology Section -->
+<section id="anthropology" class="collection-section" style="display:none;">
+    <h2>Anthropology (Cultural & Daily Life Objects)</h2>
 
-        <div class="artifact">
-            <img src="Anthropology/mask.png" alt="Guardian Spirit Mask">
-            <div class="artifact-data">
-                <h3>Guardian Spirit Mask</h3>
-                <p><strong>Material:</strong> Feathers, shells, wood</p>
-                <p><strong>Size/Weight/Shape:</strong> Headpiece, 40cm tall</p>
-                <p><strong>Estimated Age:</strong> ~200 years</p>
-                <p><strong>Preservation State:</strong> Good</p>
-                <p><strong>Location Found:</strong> Equatorial tribal region</p>
-                <p><strong>Use and Function:</strong> Initiation rituals</p>
-                <p><strong>Evidence of Use:</strong> Feather wear</p>
-                <p><strong>Manufacture Clues:</strong> Layered carving and assembly</p>
-                <p><strong>Cultural Context:</strong> Tribal ceremonial object</p>
-                <p><strong>Found With:</strong> Ceremonial garments</p>
-                <p><strong>Burial or Habitat Context:</strong> Tribal house</p>
-                <p><strong>Symbolism:</strong> Spirit guardian</p>
-                <p><strong>Comparison:</strong> Similar to other initiation masks</p>
-            </div>
+    <div class="artifact">
+        <img src="Anthropology/backpack.png" alt="Urban Nomad Backpack">
+        <div class="artifact-data">
+            <h3>Urban Nomad Backpack</h3>
+            <p><strong>Material:</strong> Mixed fabrics, leather, metal</p>
+            <p><strong>Size/Weight/Shape:</strong> Medium, rectangular</p>
+            <p><strong>Estimated Age:</strong> 21st century</p>
+            <p><strong>Preservation State:</strong> Good</p>
+            <p><strong>Location Found:</strong> Modern city streets</p>
+            <p><strong>Use and Function:</strong> Personal belongings carrier</p>
+            <p><strong>Evidence of Use:</strong> Worn straps, scratches</p>
+            <p><strong>Manufacture Clues:</strong> Machine stitched</p>
+            <p><strong>Cultural Context:</strong> Globalized lifestyle</p>
+            <p><strong>Found With:</strong> Camera, patches, passport</p>
+            <p><strong>Burial or Habitat Context:</strong> Urban environment</p>
+            <p><strong>Symbolism:</strong> Mobility, migration</p>
+            <p><strong>Comparison:</strong> Typical modern travel backpack</p>
         </div>
+    </div>
 
-        <div class="artifact">
-            <img src="Anthropology/map.png" alt="Genealogical Map">
-            <div class="artifact-data">
-                <h3>Genealogical Map</h3>
-                <p><strong>Material:</strong> Parchment</p>
-                <p><strong>Size/Weight/Shape:</strong> 50x70cm</p>
-                <p><strong>Estimated Age:</strong> 300 years</p>
-                <p><strong>Preservation State:</strong> Good</p>
-                <p><strong>Location Found:</strong> Clan archive, Europe</p>
-                <p><strong>Use and Function:</strong> Visualize clan connections</p>
-                <p><strong>Evidence of Use:</strong> Faded ink</p>
-                <p><strong>Manufacture Clues:</strong> Hand-drawn symbols</p>
-                <p><strong>Cultural Context:</strong> Clan-based societies</p>
-                <p><strong>Found With:</strong> Scrolls and parchments</p>
-                <p><strong>Burial or Habitat Context:</strong> Archive chest</p>
-                <p><strong>Symbolism:</strong> Represents kinship and sacred territory</p>
-                <p><strong>Comparison:</strong> Similar to other genealogical parchments</p>
-            </div>
+    <div class="artifact">
+        <img src="Anthropology/map.png" alt="Genealogy Map">
+        <div class="artifact-data">
+            <h3>Genealogy Map</h3>
+            <p><strong>Material:</strong> Parchment</p>
+            <p><strong>Size/Weight/Shape:</strong> 40x60 cm, flat</p>
+            <p><strong>Estimated Age:</strong> 18th century</p>
+            <p><strong>Preservation State:</strong> Slightly yellowed</p>
+            <p><strong>Location Found:</strong> Family archive</p>
+            <p><strong>Use and Function:</strong> Record family lineages</p>
+            <p><strong>Evidence of Use:</strong> Faded ink marks</p>
+            <p><strong>Manufacture Clues:</strong> Hand-drawn symbols</p>
+            <p><strong>Cultural Context:</strong> Clan traditions</p>
+            <p><strong>Found With:</strong> Old documents</p>
+            <p><strong>Burial or Habitat Context:</strong> Archive</p>
+            <p><strong>Symbolism:</strong> Heritage, ancestry</p>
+            <p><strong>Comparison:</strong> Similar to other genealogy maps</p>
         </div>
+    </div>
 
-        <div class="artifact">
-            <img src="Anthropology/backpack.png" alt="Urban Nomad Backpack">
-            <div class="artifact-data">
-                <h3>Urban Nomad Backpack</h3>
-                <p><strong>Material:</strong> Fabric, leather, metal zippers</p>
-                <p><strong>Size/Weight/Shape:</strong> Medium, 8kg</p>
-                <p><strong>Estimated Age:</strong> 21st century</p>
-                <p><strong>Preservation State:</strong> Good</p>
-                <p><strong>Location Found:</strong> City flea market</p>
-                <p><strong>Use and Function:</strong> Personal belongings carrier</p>
-                <p><strong>Evidence of Use:</strong> Scuffs, faded patches</p>
-                <p><strong>Manufacture Clues:</strong> Commercial stitching</p>
-                <p><strong>Cultural Context:</strong> Modern urban anthropology</p>
-                <p><strong>Found With:</strong> Camera, passport, patches</p>
-                <p><strong>Burial or Habitat Context:</strong> Living space artifact</p>
-                <p><strong>Symbolism:</strong> Represents migration and globalization</p>
-                <p><strong>Comparison:</strong> Similar to other urban backpacks worldwide</p>
-            </div>
+    <div class="artifact">
+        <img src="Anthropology/mask.png" alt="Spirit Guardian Mask">
+        <div class="artifact-data">
+            <h3>Spirit Guardian Mask</h3>
+            <p><strong>Material:</strong> Feathers, shells, wood</p>
+            <p><strong>Size/Weight/Shape:</strong> Full head, lightweight</p>
+            <p><strong>Estimated Age:</strong> 19th century</p>
+            <p><strong>Preservation State:</strong> Complete</p>
+            <p><strong>Location Found:</strong> Equatorial tribe</p>
+            <p><strong>Use and Function:</strong> Initiation rituals</p>
+            <p><strong>Evidence of Use:</strong> Polished areas from wear</p>
+            <p><strong>Manufacture Clues:</strong> Intricate carving</p>
+            <p><strong>Cultural Context:</strong> Tribal traditions</p>
+            <p><strong>Found With:</strong> Ritual costumes</p>
+            <p><strong>Burial or Habitat Context:</strong> Cultural site</p>
+            <p><strong>Symbolism:</strong> Spirit protection</p>
+            <p><strong>Comparison:</strong> Similar masks from neighboring tribes</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- JS for Section Switching -->
-    <script>
-        function showSection(section) {
-            const sections = document.querySelectorAll('.collection-section');
-            sections.forEach(s => s.style.display = 'none');
-            document.getElementById(section).style.display = 'block';
-        }
-    </script>
+<footer>
+    <p>&copy; 2026 Museum. All rights reserved.</p>
+</footer>
+
+<script>
+function showSection(section) {
+    const sections = document.querySelectorAll('.collection-section');
+    sections.forEach(s => s.style.display = 'none');
+    document.getElementById(section).style.display = 'block';
+}
+</script>
+
 </body>
 </html>
