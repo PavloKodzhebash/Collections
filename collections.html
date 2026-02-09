@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Museum Collections</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Museum Collections</h1>
+        <nav>
+            <button onclick="showSection('archeology')">Archeology</button>
+            <button onclick="showSection('anthropology')">Anthropology</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Archeology Section -->
+        <section id="archeology" class="collection-section">
+            <h2>Archeology</h2>
+            <!-- Здесь будут артефакты -->
+        </section>
+
+        <!-- Anthropology Section -->
+        <section id="anthropology" class="collection-section" style="display:none;">
+            <h2>Anthropology</h2>
+            <!-- Здесь будут артефакты -->
+        </section>
+    </main>
+
+    <footer>
+        <p>The content in this gallery was entirely created by AI under human direction. It was curated, reviewed and edited by a human before being published.</p>
+    </footer>
+
+    <script>
+    function showSection(section) {
+        const sections = document.querySelectorAll('.collection-section');
+        sections.forEach(s => s.style.display = 'none');
+        document.getElementById(section).style.display = 'block';
+    }
+    </script>
+</body>
+</html>
